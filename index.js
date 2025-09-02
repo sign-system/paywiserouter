@@ -1,10 +1,13 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 8080
 
 app.get('/', (req, res) => {
-  res.send('PayWise App!')
-})
+  res.json({
+    message: 'Paywise Router is running',
+    status: 'success',
+  });
+});
 
 app.listen(port, () => {
   console.log(`App listening on port ${port}`)

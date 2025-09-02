@@ -6,6 +6,7 @@ app.get('/', (req, res) => {
   res.json({
     message: 'Paywise Router is running',
     status: 'success',
+    port: port,
   });
 });
 
